@@ -337,6 +337,11 @@ a {
 		margin-top: 7rem;
 		font-size: 2.3rem;
 	}
+	
+	.arrow-p {
+		font-size: 3rem;
+		margin-top: -2rem;
+	}
 
 	.about-container {
 		display: flex;
