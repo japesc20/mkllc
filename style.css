@@ -20,7 +20,6 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: sticky;
 	top: 0;
 	z-index: 9999;
 	transition: all 0.5s ease-in-out;
@@ -30,7 +29,6 @@ a {
 	background: #fff;
 	display: flex;
 	position: fixed;
-	justify-content: space-between;
 	height: 80px;
 	z-index: 9999;
 	width: 100%;
@@ -58,9 +56,8 @@ a {
 
 .navbar-menu {
 	display: flex;
-	align-items: center;
 	list-style: none;
-	float: left;
+	width: 50%;
 }
 
 .nav-item {
@@ -74,10 +71,10 @@ a {
 	font-size: 1.2rem;
 	font-style: italic;
 	margin-left: 2rem;
+	padding: 0 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 1rem;
 	height: 100%;
 }
 
@@ -90,6 +87,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 50%;
 }
 
 .social-icon {
@@ -133,9 +131,10 @@ a {
 		background: rgba(0, 0, 0, 0.95);
 		top: 0;
 		opacity: 1;
-		z-index: 99;
+		z-index: 999;
 		height: 100vh;
 		font-size: 1.6rem;
+		padding-top: 230px;
 	}
 
 	.menu-toggle {
@@ -157,12 +156,13 @@ a {
 
 	.nav-item {
 		width: 100%;
+		margin-top: -150px;
 	}
 
 	.nav-link {
 		color: #fff;
 		text-align: center;
-		padding: 1rem;
+		padding: 2rem;
 		width: 100%;
 		display: table;
 		margin-left: 0;
@@ -174,7 +174,7 @@ a {
 
 	#mobile-menu {
 		position: absolute;
-		top: 20%;
+		top: 10%;
 		right: 5%;
 		transform: translate(5%, 20%);
 	}
@@ -327,7 +327,7 @@ a {
 
 @media screen and (max-width: 1024px) {
 	.logo {
-		margin-top: 3rem;
+		margin-top: -5rem;
 		font-size: 7rem;
 		font-weight: 300;
 	}
@@ -337,6 +337,7 @@ a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-top: -10rem;
 	}
 
 	.arrow-p {
@@ -393,6 +394,10 @@ a {
 	margin-top: 1rem;
 }
 
+.service-box p {
+	text-align: center;
+}
+
 .service-box .button {
 	background-color: darkmagenta;
 	border: none;
@@ -436,6 +441,7 @@ a {
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
+	overflow: auto;
 }
 .overlay:target {
 	visibility: visible;
@@ -446,7 +452,6 @@ a {
 	margin: 7rem auto;
 	padding: 20px;
 	background: #fff;
-	border-radius: 5px;
 	width: 30%;
 	position: relative;
 	transition: all 0.5s ease-in-out;
@@ -497,7 +502,6 @@ a {
 }
 .popup .content {
 	max-height: 30%;
-	overflow: auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -507,6 +511,7 @@ a {
 		justify-content: center;
 		flex-direction: column;
 		margin-bottom: 5rem;
+		overflow: auto;
 	}
 
 	.service-box {
@@ -517,7 +522,16 @@ a {
 		width: 70%;
 	}
 	.popup {
-		width: 70%;
+		margin-top: 5rem;
+		width: 100%;
+	}
+
+	.popup h2 {
+		font-size: 2rem;
+	}
+
+	.popup h4 {
+		font-size: 1.3rem;
 	}
 }
 
